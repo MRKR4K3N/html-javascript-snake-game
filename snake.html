@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  canvas {
+    border: 1px solid black;
+  }
+  div.container{
+    float: left;
+    height: 100%;
+    width: 50%;
+  }
+  p{
+    padding: 10px;
+  }
+  </style>
+</head>
+<body>
+  <div class="container" style="text-align: right">
+    <br>
+    <canvas width="400" height="400" id="game"></canvas>
+  </div>
+  <div class="container">
+    <p id="score"></p>
+    <p id="life"></p>
+    <p id="apple_status"></p>
+    <p id="snake_status"></p>
+  </div>
+
+  <script src="js/snake_functions.js"></script>
+</body>
+</html>
